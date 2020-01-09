@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat Extra Bold";
+    src: url("../fonts/Montserrat-ExtraBold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ProximaNova Semi-Bold";
+    src: url("../fonts/ProximaNova-SemiBold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sours Sans Pro Regular";
+    src: url("../fonts/SourceSansPro-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sours Sans Pro Semi-Bold";
+    src: url("../fonts/SourceSansPro-Semibold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sours Sans Pro Bold";
+    src: url("../fonts/SourceSansPro-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
