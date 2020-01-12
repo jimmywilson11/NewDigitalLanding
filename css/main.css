@@ -351,22 +351,13 @@
   font: 19px Sours Sans Pro Bold, sans-serif;
 }
 
+#faq {
+  padding-bottom: 100px;
+}
+
 #faq .section-head {
   font: 50px Montserrat Extra Bold, sans-serif;
   margin-bottom: 30px;
-}
-
-#faq .dropdownlist {
-  padding-bottom: 50px;
-}
-
-#faq .dropdownlist .dropdownlist-control {
-  display: block;
-  text-decoration: none;
-  font: 30px Sours Sans Pro Bold, sans-serif;
-  color: #0D3693;
-  margin: 10px 0;
-  border-bottom: 2px solid #000;
 }
 
 #post-now .section-head {
