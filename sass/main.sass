@@ -3,142 +3,186 @@
 
 .container
     width: 1170px
-.black-part
-    background-color: $black
-    height: 47px
-    .social-item   
-        margin: 5px
-        a
-            display: block
-            text-decoration: none       
-            .fa-facebook-f
-                padding: 8px 0 0 10px 
-                width: 32px
-                height: 32px
-                color: $white
-                background-color: $facebook-color
-                border-radius: 50%
-                &:hover
-                    background-color: $white
-                    color: $facebook-color
-            .fa-google-plus-g
-                padding: 8px 0 0 7px 
-                width: 32px
-                height: 32px
-                color: $gray
-                background-color: $white
-                border-radius: 50%
-                &:hover
+    margin: 0 auto
+    max-width: 100%
+a
+    transition: all .4s ease-in
+    text-decoration: none !important
+.active
+    color: $white
+    background-color: $line
+.section-head
+    font: bold 3.125rem $second-head
+    text-align: center
+    padding: .5em 0
+.btn
+    padding: .5em 2em
+    font: normal 1.25rem $text-font !important
+    text-decoration: none
+    background-color: $red
+    color: $white
+    border: 2px solid transparent
+    border-radius: 25px
+    box-shadow: 0 5px 8px 0 rgba(0,2,1,0.6)
+    transition: all ease-in .4s
+    &:hover
+        color: $red
+        background-color: $white
+        border: 2px solid $red
+#header
+    border-bottom: 5px solid $line
+    .black-part-wrapper
+        background-color: $black
+        .social-list
+            margin-top: 1em
+            .social-item
+                margin: 0 .2em
+                .social-item-link
+                    display: block       
+                    text-align: center
+                    width: 32px
+                    height: 32px
+                    padding: .4em .2em .2em .2em              
+                    border-radius: 50%
+                    transform: scale(-1, 1)
+                    transform: perspective(300px) rotateY(0deg)           
+                    &:hover
+                        transition: all linear .5s
+                        transform: perspective(300px) rotateY(360deg)
+                .facebook
+                    color: $white
+                    background-color: $facebook-color
+                    &:hover
+                        color: $facebook-color
+                        background-color: $white
+                .google
                     color: $red
-            .fa-twitter
-                padding: 8px 0 0 8px 
-                width: 32px
-                height: 32px
-                color: $white
-                background-color: $twetter-color
-                border-radius: 50%
-                &:hover
-                    color: $twetter-color
-                    background-color: $white
-    .referenses
-        .referenses-item
-            margin: 15px 10px 0 10px
-            a
-                display: block
-                text-decoration: none
-                color: $white
-                font: 17px $menu-font
-                &:hover
-                    color: $twetter-color
-.white-part
-    height: 145px
-    padding-top: 41px
-    background-color: $white
-    border-bottom: 8px solid $line
-    .navbar
-        padding: 0
-        margin: 0
-        .site-title
-            a
-                text-decoration: none
-                font: 36px $main-head
-                color: $blue
-                span
-                    color: $twetter-color
-        .nav-item
-            margin: 0 0 0 30px
-            a
-                font: 20px $text-font
+                    background-color: $white     
+                    &:hover
+                        color: $white
+                        background-color: $red
+                .twitter
+                    color: $white
+                    background-color: $twetter-color 
+                    &:hover
+                        color: $twetter-color
+                        background-color: $white
+        .contact-list
+            .contact-item
+                margin: 0 1em 0 0
+                .contact-item-link
+                    color: $white
+                    font: normal 1.0625rem $menu-font
+                    &:hover
+                        color: $red
+                        i
+                            color: $white
+                            transition: all linear .5s
+                            transform: perspective(300px) rotateY(360deg)
+                    i
+                        transform: scale(-1, 1)
+                        transform: perspective(300px) rotateY(0deg)
+                        margin-right: .5em
+    .white-part
+        background-color: $white
+        padding: 1.5em 0
+        .navbar
+            padding: 0
+            .site-title
+                .logo
+                    color: $blue
+                    font: normal 2.25rem $main-head
+                    transition: all ease-in .4s
+                    span
+                        transform: all linear .2s 
+                        color: $line
+                    &:hover
+                        transition: all ease-in .4s
+                        color: $line
+                        span
+                            transition: all ease-in .4s
+                            color: $blue
+            .navbar-collapse
+                .navbar-nav
+                    .nav-item                         
+                        .nav-link
+                            padding: .2em 2em
+                            font: normal 1.25rem $text-font
+                            color: $black
+                            &:hover
+                                color: $white
+                                background-color: $line
 #first
-    background-image: url('../img/background.png')
-    .section-head
-        font: 80px $second-head
-        text-align: center
+    padding: 5em 0
+    background-image: url(../img/background.png)
+    background-size: cover
+    background-repeat: no-repeat
+    .main-title
+        font: bold 4.5rem $second-head
         color: $white
-        padding-top: 78px
-        margin-bottom: 21px
     .price-tag
+        background-image: url(../img/price-tag.png)
+        background-repeat: no-repeat
+        background-position: center
+        display: block
+        padding: .2em 0
+        color: $red
         position: relative
-        display: flex
-        justify-content: center
-        margin-bottom: 18px
-        img
-            z-index: -1
-        h2
-            position: absolute
-            margin: 10px 0 0 25px
-            color: $red
-            font: 50px $second-head
+        font: bold 3.125rem $second-head
     .description-price
-        font: 38px $second-text-font
         color: $white
-        text-align: center
+        font: bold 2.375rem $second-text-font
     .contact-inf
-        padding-bottom: 81px
-    .contact-head
-        margin: 44px 0 27px 0
-        font: 36px $main-head
-        color: $white
-    .contact-item
-        position: relative
-        a
-            text-decoration: none
+        .contact-inf-title
+            font: bold 2.25rem $main-head
             color: $white
-            font: 30px $refs-font
-            &:hover
-                color: $black
-                .fa-skype, .fa-envelope
-                    color: $red
-        .fa-skype
-            position: absolute
-            margin: 22px 0 0 -60px
-        .fa-envelope
-            position: absolute
-            margin: 27px 0 0 -80px
+        .contact-inf-list
+            .contact-inf-item
+                margin: .5em 0
+                .contact-inf-item-link
+                    display: block
+                    color: $white
+                    font: bold 1.875rem $refs-font
+                    word-wrap: break-word
+                    padding: 0 .2em
+                    i
+                        position: absolute
+                        top: 28px
+                        left: 22px
+                        transform: scale(-1, 1)
+                        transform: perspective(300px) rotateY(0deg)
+                    &:hover
+                        color: $red
+                        i
+                            transition: all linear .5s
+                            transform: perspective(300px) rotateY(360deg)
+                            color: $white
+                .email
+                    position: relative
+                .skype
+                    position: relative
+                    i
+                        top: 25px
+                        left: 45px
 #about-us
-    padding-top: 70px
-    .section-head
-        text-align: center
-        font: 50px $second-head
-        padding-bottom: 27px
-    .about-wrapper
-        width: 45%
-    .about-description
-        padding-bottom: 34px
-        font: 19px $second-text-font
-    .btn
-        font: 20px $text-font
-        padding: 10px 22px
-        text-decoration: none
-        background-color: $red
-        color: $white
-        border: 2px solid transparent
-        border-radius: 25px
-        box-shadow: 0 5px 8px 0 rgba(0,2,1,0.6)
-        &:hover
-            color: $red
-            background-color: $white
-            border: 2px solid $red
+    padding: 5em 0
+    .description-list
+        .description-item
+            margin-bottom: 2em
+            margin-left: 5em
+            position: relative
+            &::before
+                position: absolute
+                display: block
+                content: ''
+                width: 100px
+                height: 100px
+                background-image: url(../img/done.png)
+                background-size: contain
+                top: -20px
+                left: -90px
+            .description-item-text
+                font: 1.1875rem $second-text-font
     .head-block
         margin: 55px 0 36px 0
         font: 50px $second-head
@@ -146,7 +190,6 @@
         span
             color: $red
     .card-deck
-        margin-bottom: 53px
         .card
             border-style: none
             position: relative
@@ -158,103 +201,81 @@
                 background-color: transparent
                 border-style: none
                 font: 19px $second-text-font
-
 #contact-us
-    background-image: url('../img/background-2.png')
-    padding-bottom: 30px
+    background-image: url(../img/background-2.png)
+    background-size: cover
+    background-repeat: no-repeat
     .section-head
-        padding-top: 30px 
-        text-align: center
-        font: 50px $second-head
         color: $white
-    .contact-item
-        position: relative
-        a
-            text-decoration: none
-            color: $white
-            font: 19px $refs-font
-            &:hover
-                color: $red
-                i
-                    color: $black
-        .fa-map-marker-alt, .fa-envelope, .fa-skype
-            position: absolute
-            font-size: 35px
-            top: 25px
-        .fa-map-marker-alt
-            right: 0
-            left: 55px
-        .fa-envelope
-            left: 12px
-        .fa-skype
-            top: 20px
-            left: 40px
-    .addres
-        margin-top: 10px
-        width: 35%
+    .contact-list
+        .contact-item
+            margin: .5em 0
+            .addres
+                color: $white
+                padding-top: 1em
+                font: bold 1.1875rem $refs-font
+            img
+                position: relative
+            .contact-item-link
+                color: $white
+                font: bold 1.1875rem $refs-font
+                transition: all .4s ease-in
+                &:hover
+                    color: $red
+            i
+                position: absolute
+                color: $white
+                font-size: 1.75rem
+                top: 0
+                left: 0
+            .fa-map-marker-alt
+                top: 33px
+                left: 70px       
+            .fa-envelope
+                top: 30px
+                left: 30px
+            .fa-skype
+                top: 25px
+                left: 55px
 #why-us
-    padding: 75px 0 80px 0
-    .section-head
-        font: 50px $second-head
-        padding-bottom: 35px
-    .description
-        padding: 0
-        margin-right: 50px
-        
-    .btn
-        margin-top: 35px
-        font: 20px $text-font
-        padding: 10px 22px
-        text-decoration: none
-        background-color: $red
-        color: $white
-        border: 2px solid transparent
-        border-radius: 25px
-        box-shadow: 0 5px 8px 0 rgba(0,2,1,0.6)
-        &:hover
-            color: $red
-            background-color: $white
-            border: 2px solid $red
-    .head-block
-        margin: 80px 0 50px 0
-        font: 50px $second-head
-    h3
-        font: 30px $refs-font
-        color: $blue
-    p
-        font: 19px $refs-font   
+    .description-wrapper
+        .description
+            padding: 2em 0
+            font: 1.1875rem $second-text-font
+    .benefits
+        .benefits-list
+            .benefits-item
+                margin: 1em 0
+                .benefits-item-title
+                    font: bold 1.875rem $refs-font
+                    color: $blue
+                .benefits-item-description
+                    font: bold 1.1875rem $refs-font
 #faq
-    padding-bottom: 100px
-    .section-head
-        font: 50px $second-head
-        margin-bottom: 30px
-    
+    .accordion
+        .card
+            border: none
+            .card-header
+                border-bottom: 2px solid $gray
+                background-color: transparent
+                .btn-link
+                    font: bold 1.875rem $refs-font
+            .card-body
+                    font: normal 1.1875rem $text-font
+            .show
+                border-top: 1px solid $gray
+                border-bottom: 2px solid $gray
+                .btn-link
+                    color: $blue
 #post-now
-    .section-head
-        font: 50px $second-head
     .post-wrapper
-        margin-bottom: 80px
+        margin-bottom: 10%
     .post-description
-        padding: 120px 0 0 0
-        width: 45%
         p
-            font: 19px $refs-font
-            margin-bottom: 50px 
-    .btn
-        font: 20px $text-font
-        padding: 10px 22px
-        text-decoration: none
-        background-color: $red
-        color: $white
-        border: 2px solid transparent
-        border-radius: 25px
-        box-shadow: 0 5px 8px 0 rgba(0,2,1,0.6)
-        &:hover
-            color: $red
-            background-color: $white
-            border: 2px solid $red
+            font: normal 1.1875rem $refs-font
+            line-height: 2rem
     .card-deck
-        padding-bottom: 50px
+        padding-bottom: 5%
         .card
             border-style: none
             img
@@ -265,15 +286,16 @@
                 background-color: transparent
                 text-align: center
                 .card-head
-                    font: 25px $refs-font
+                    font: bold 1.5625rem $refs-font
                     line-height: 21px
                     color: $blue
                     margin: 0
                     padding: 0
                 span
-                    font: 23px $refs-font
+                    padding: .3em 0
+                    font: normal 1.4375rem $refs-font
                 p
-                    font: 19px $second-text-font
+                    font:  normal 1.1875rem $text-font
 footer
     background-color: $black
     padding: 50px 0
@@ -286,17 +308,24 @@ footer
                 transition: .4 all ease-in
                 color: $blue
                 span
-                    color: $twetter-color           
+                    color: $line
+    .navbar
+        .navbar-toggler 
+            color: $white
+            border-color: $white
+            .navbar-toggler-icon
+                background-color: $white          
     .navbar-collapse
         flex-grow: 0
         .navbar-nav
             .nav-item
                 a
-                    font: 17px $text-font
-                    padding: 0 20px 
+                    font: normal 1.0625rem $text-font
+                    padding: .5em 2em 
                     color: $white
                     &:hover
-                        color: $red
+                        background-color: $line
+                        color: $white
     .social-item
         margin-right: 12px
         a
@@ -305,7 +334,12 @@ footer
             background-color: $white
             width: 32px
             height: 32px
-            border-radius: 50%       
+            border-radius: 50% 
+            transform: scale(-1, 1)
+            transform: perspective(300px) rotateY(0deg)           
+            &:hover
+                transition: all linear .5s
+                transform: perspective(300px) rotateY(360deg)      
             .fa-facebook-f
                 padding: 8px 0 0 10px
                 &:hover
@@ -317,5 +351,4 @@ footer
             .fa-twitter
                 padding: 8px 0 0 8px
                 &:hover
-                    color: $twetter-color 
-           
+                    color: $twetter-color
